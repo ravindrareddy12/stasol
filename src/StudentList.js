@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 function StudentList({ students, onDelete }) {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Filter students based on search term
+
   const filteredStudents = students.filter((student) =>
     student.studentName.toLowerCase().includes(searchTerm.toLowerCase())
   );

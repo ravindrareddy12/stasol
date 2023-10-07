@@ -9,14 +9,14 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleAddStudent = (formData) => {
-    // Generate a new student ID (you can use a library like uuid for this)
+  
     const newStudent = { studentId: `${students.length + 1}`, ...formData };
     setStudents([...students, newStudent]);
     setIsModalOpen(false);
   };
 
   const handleDelete = (studentId) => {
-    // Filter out the student with the given ID
+  
     const updatedStudents = students.filter((student) => student.studentId !== studentId);
     setStudents(updatedStudents);
   };

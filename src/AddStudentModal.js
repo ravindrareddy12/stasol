@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './AddStudentModal.css';
-// You can style this file as needed
+
 
 function AddStudentModal({ onSubmit }) {
   const [formData, setFormData] = useState({
@@ -20,10 +20,9 @@ function AddStudentModal({ onSubmit }) {
   };
 
   const handleSubmit = () => {
-    // Perform form validation here (e.g., check date of birth, email, phone number, etc.)
-    // If validation passes, submit the form data
+    
     onSubmit(formData);
-    // Clear the form data
+  
     setFormData({
       studentName: '',
       dateOfBirth: '',
